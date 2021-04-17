@@ -1,0 +1,63 @@
+// @import "./variables.scss";
+
+@font-face {
+  font-family: "Lato";
+  font-weight: 300;
+  src:
+    url("./assets/fonts/Lato/Lato-Light.eot") format("eot"),
+    url("./assets/fonts/Lato/Lato-Light.ttf") format("ttf"),
+    url("./assets/fonts/Lato/Lato-Light.woff2") format("woff2"),
+    url("./assets/fonts/Lato/Lato-Light.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Lato";
+  font-weight: 400;
+  src:
+    url("./assets/fonts/Lato/Lato-Medium.eot") format("eot"),
+    url("./assets/fonts/Lato/Lato-Medium.ttf") format("ttf"),
+    url("./assets/fonts/Lato/Lato-Medium.woff2") format("woff2"),
+    url("./assets/fonts/Lato/Lato-Medium.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Lato";
+  font-weight: 600;
+  src:
+    url("./assets/fonts/Lato/Lato-Semibold.eot") format("eot"),
+    url("./assets/fonts/Lato/Lato-Semibold.ttf") format("ttf"),
+    url("./assets/fonts/Lato/Lato-Semibold.woff2") format("woff2"),
+    url("./assets/fonts/Lato/Lato-Semibold.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Lato";
+  font-weight: 700;
+  src:
+    url("./assets/fonts/Lato/Lato-Bold.eot") format("eot"),
+    url("./assets/fonts/Lato/Lato-Bold.ttf") format("ttf"),
+    url("./assets/fonts/Lato/Lato-Bold.woff2") format("woff2"),
+    url("./assets/fonts/Lato/Lato-Bold.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Lato";
+  font-weight: 900;
+  src:
+    url("./assets/fonts/Lato/Lato-Heavy.eot") format("eot"),
+    url("./assets/fonts/Lato/Lato-Heavy.ttf") format("ttf"),
+    url("./assets/fonts/Lato/Lato-Heavy.woff2") format("woff2"),
+    url("./assets/fonts/Lato/Lato-Heavy.woff") format("woff");
+}
+
+body {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  margin: 0;
+  font-family: "Lato";
+  background: red;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow: hidden;
+}

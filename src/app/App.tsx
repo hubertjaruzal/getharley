@@ -1,8 +1,6 @@
 import React from "react";
 import Match from "./components/Match";
-import {
-  Container,
-} from "./App.styles";
+import { Container } from "./App.styles";
 
 const App = () => {
   return (

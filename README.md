@@ -34,7 +34,9 @@ Recommended Node version ~ `v15.11.0`
 
 ## Unit tests
 
-1. `/src/app/components/Match/Practitioners/__tests__/index.utils.test.tsx` - tests of core functions, which are used for preparing structure for practitioners availability slots
+1. Run tests - `yarn run test` 
+
+- `/src/app/components/Match/Practitioners/__tests__/index.utils.test.tsx` - tests of core functions, which are used for preparing structure for practitioners availability slots
 
 ## Additional info
 

@@ -1,44 +1,39 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app), using the [Redux](https://redux.js.org/) and [Redux Toolkit](https://redux-toolkit.js.org/) template.
+# GetHarley
 
-## Available Scripts
+Recommended Node version ~ `v15.11.0`
 
-In the project directory, you can run:
+## Installation (step by step)
 
-### `yarn start`
+1. Open Terminal
+2. Check Node version `node -v`. If you don't have node installed go here: https://nodejs.org/en/download/
+3. Check Git version `git --version`. If you don't have git installed go here: https://git-scm.com/book/en/v2/Getting-Started-Installing-Git
+4. Check Yarn version `yarn -v`. If you don't have yarn installed go here: https://classic.yarnpkg.com/en/docs/install
+5. Go to the catalog where you would like to keep the project
+6. Clone respository `git clone https://github.com/hubertjaruzal/getharley.git`
+7. Open folder `cd getharley`
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Run the app
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+1. Run `git pull` to get newest changes
+2. Run `yarn` to install all needed dependencies
+3. Run `yarn run start` to run the project
 
-### `yarn test`
+## Tech Stack, Libraries and Tools
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+1. `Typescript` - TypeScript is an open-source language which builds on JavaScript, one of the world’s most used tools, by adding static type definitions.
+2. `React` - UI Library.
+3. `Redux` - State management tool.
+4. `React Hook Form` - Performant, flexible and extensible forms with easy-to-use validation.
+5. `date-fns` - Modern JavaScript date utility library.
+6. `styled-components` - CSS-in-JS tool that bridges the gap between components and styling.
+7. `material-ui` - Ready to use Date and Time pickers.
 
-### `yarn build`
+## Unit tests
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+1. `/src/app/components/Match/Practitioners/__tests__/index.utils.test.tsx` - tests of core functions, which are used for preparing structure for practitioners availability slots
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+## Additional info
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+1. Specialities and Practitioners lists are placed in `/src/app/constants/` catalog. In "real live" app, those values should be fetched from API.
+2. Application doesn't have multiple screens (just different form steps), I decided to not add a tool for routing. It can be easily done later if there is a need for that without any problems.
+3. I decided to add state managament tool even if potential of it isn't fully used in that application. I think that it's a good practice to add those kind of things at the very beginning, because as a application grows it takes a lot of time to rewrite existing parts of the application to support that tool and doing it at the start always pays off in the future.
